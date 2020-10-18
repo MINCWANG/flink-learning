@@ -37,10 +37,6 @@ object StreamingJob {
     // set up the streaming execution environment
     val env = StreamExecutionEnvironment.getExecutionEnvironment
 
-    env
-      .fromElements("ASD")
-      .print
-
     /*
      * Here, you can start creating your execution plan for Flink.
      *

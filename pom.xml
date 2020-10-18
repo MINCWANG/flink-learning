@@ -26,6 +26,7 @@ under the License.
 	<version>1.0-SNAPSHOT</version>
 	<modules>
 		<module>configration-center</module>
+		<module>async-io</module>
 	</modules>
 	<packaging>pom</packaging>
 
@@ -54,6 +55,16 @@ under the License.
 	</properties>
 
 	<dependencies>
+
+
+		<!--        Flink WebUI -->
+		<dependency>
+			<groupId>org.apache.flink</groupId>
+			<artifactId>flink-runtime-web_${scala.binary.version}</artifactId>
+			<version>${flink.version}</version>
+
+		</dependency>
+
 		<!-- Apache Flink dependencies -->
 		<!-- These dependencies are provided, because they should not be packaged into the JAR file. -->
 		<dependency>
